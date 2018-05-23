@@ -8,3 +8,15 @@ let player = parseInt(prompt('Your choice: 0 - rock, 1 - scissors, 2 - paper'));
 let computer = Math.floor(Math.random() * 3);
 
 // опишем все условия и будем выводить в консоль 'computer win' или 'player win'
+
+let result;
+
+if (player == computer){
+    result = 'Draw!';
+} else if (player == 0 && computer == 1 || player == 1 && computer == 2 || player == 2 && computer == 0){
+    result = 'player win';
+} else {
+    result = 'computer win';
+}
+
+console.log(result);

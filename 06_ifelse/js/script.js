@@ -1,4 +1,4 @@
-let number = prompt('ведите число');
+let number = parseInt(prompt('ведите число'));
 if (number < 0){
     number *= -1;
 }
